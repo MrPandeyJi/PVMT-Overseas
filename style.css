@@ -1,0 +1,317 @@
+body {
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Top Section*/
+
+.topSection {
+  height: 100vh;
+}
+.topSection .row {
+  margin: 0 !important;
+}
+.arrow {
+  position: relative;
+  top: 18%;
+}
+.tagline {
+  text-align: center;
+  position: relative;
+  top: 15%;
+  font-size: 3em;
+  color: #ff4033;
+  font-weight: 700;
+}
+
+#navbarNav {
+  justify-content: flex-end;
+}
+.parallax {
+  background: url(./Assests/parallaxImg.jpg) fixed top center no-repeat;
+  background-size: cover;
+}
+.btnNav {
+  background: #fff;
+  font-size: 1em;
+  padding: 8px 25px;
+  margin: 8px 25px;
+  border-radius: 25px;
+  color: black;
+  text-decoration: none;
+  box-shadow: 0 4px 80px 0 rgb(0 0 0 / 10%), 0 6px 20px 0 rgb(0 0 0 / 9%);
+}
+.contact {
+  text-decoration: none;
+  text-align: center;
+  color: #f4f4f4;
+  padding: 10px 20px;
+  border-radius: 25px;
+  background: linear-gradient(to top right, #ffc603, #ff4033);
+}
+
+.menuList {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  padding: 15px;
+}
+.menuList .btnNav {
+  white-space: nowrap;
+  padding: 8px 15px;
+}
+
+/* Value Section*/
+.allSections {
+  background: #f4f4f4;
+  height: 100%;
+}
+.secHeading {
+  text-align: center;
+  padding: 30px;
+  color: #ff4033;
+  font-size: 3em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* .top-left-section{
+  padding: 120px 0 ;
+} */
+.valuesDetails {
+  background: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  margin-top: 15px;
+  max-height: 220px;
+  max-width: 220px;
+  border-radius: 10px;
+  box-shadow: 0 4px 80px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.valuesDetails div {
+  font-size: 1.3em;
+  margin: 10px;
+}
+
+/*Service Section*/
+.bgService {
+  font-size: 15rem;
+  font-weight: bolder;
+  color: #e8e8e8;
+  text-transform: uppercase;
+  text-align: center;
+  opacity: 0.5;
+  line-height: 1.2;
+}
+
+#services {
+  margin-bottom: -130px;
+}
+.serviceContent {
+  position: relative;
+  top: -250px;
+  font-size: 1.3em;
+}
+
+.serviceSubHeading {
+  text-align: center;
+  margin-top: 2em;
+  margin-bottom: 20px;
+  color: #ff4033;
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+/*Recruiters and universities*/
+
+.recruiters {
+  text-align: initial;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-right: 50px;
+}
+
+.clgAndUniv {
+  margin-top: 100px;
+}
+.universities {
+  text-align: initial;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-right: 50px;
+}
+.universities br {
+  display: none;
+}
+.univBorder {
+  color: #ff4033;
+  border: #ffc603 dashed 2px;
+  padding: 5px 15px;
+  white-space: normal;
+}
+.univCap {
+  position: relative;
+  top: -50px;
+  right: 40px;
+}
+
+/*Terms and conditions*/
+.Terms {
+  margin-top: 100px;
+}
+.btnTerms {
+  background: linear-gradient(to top right, #ffc603, #ff4033);
+  padding: 10px 40px;
+  font-size: 1.3em;
+  text-decoration: none;
+  color: white;
+  border-radius: 30px;
+}
+.termsText {
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: bold;
+  margin: 25px;
+  padding: 10px 50px;
+}
+
+/*Footer*/
+
+.footer {
+  background: linear-gradient(
+    to right,
+    rgba(255, 64, 51, 0.3),
+    rgba(255, 198, 3, 0.5)
+  );
+
+  padding: 80px;
+}
+.footerLinks a {
+  text-decoration: none;
+  color: #000;
+}
+.footerLinks a:hover {
+  color: #fff;
+}
+/*Media Queries*/
+@media only screen and (max-width: 1250px) {
+  .bgService {
+    font-size: 10rem;
+  }
+  .serviceContent {
+    position: relative;
+    top: -200px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .arrow img {
+    position: relative;
+    top: 0;
+    width: 180px;
+    height: 90px;
+  }
+  .logo {
+    display: none;
+  }
+  .top-left-section {
+    max-height: 50px;
+  }
+  .tagline {
+    position: relative;
+    top: 0;
+    font-size: 2em;
+  }
+  .menuList {
+    display: none;
+  }
+  .btnNav {
+    text-align: center;
+    box-shadow: none;
+    border-radius: 0;
+    border-bottom: 0.2px solid;
+  }
+
+  .valuesDetails {
+    max-height: 130px;
+    max-width: 130px;
+    margin-bottom: 25px;
+  }
+  .valueIcon {
+    width: 35px;
+    height: 35px;
+    margin-top: 20px;
+  }
+  .valuesDetails div {
+    font-size: 1em;
+    margin: 10px;
+  }
+
+  .secHeading {
+    padding: 10px;
+
+    font-size: 2.5em;
+  }
+  .bgService {
+    font-size: 5rem;
+    position: relative;
+    bottom: -200px;
+  }
+  .serviceContent {
+    position: relative;
+    top: -80px;
+    font-size: 1.3em;
+  }
+  .serviceSubHeading {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+  }
+
+  .recruiters {
+    font-size: 1.8em;
+  }
+  #services {
+    margin-bottom: -10px;
+  }
+
+  .universities {
+    font-size: 1.5em;
+  }
+  .universities span {
+    margin-bottom: 20px;
+  }
+  .universities br {
+    display: initial;
+  }
+  .univBorder {
+    display: inline-block;
+    margin-top: 10px;
+  }
+  .univCap {
+    display: none;
+  }
+
+  .termsText {
+    font-size: 1.2em;
+  }
+  .parallax {
+    background: url(./Assests/MobParallax.jpg) fixed center no-repeat;
+    background-size: cover;
+  }
+  .topSection {
+    height: 500px;
+  }
+  .tagline br {
+    display: none;
+  }
+
+  .footer {
+    padding: 20px;
+  }
+}
