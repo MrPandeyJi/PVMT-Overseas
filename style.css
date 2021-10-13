@@ -28,6 +28,14 @@ body {
 #navbarNav {
   justify-content: flex-end;
 }
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    box-shadow: none;
+}
+
 .parallax {
   background: url(./Assests/parallaxImg.jpg) fixed top center no-repeat;
   background-size: cover;
@@ -42,6 +50,7 @@ body {
   text-decoration: none;
   box-shadow: 0 4px 80px 0 rgb(0 0 0 / 10%), 0 6px 20px 0 rgb(0 0 0 / 9%);
 }
+
 .contact {
   text-decoration: none;
   text-align: center;
@@ -314,4 +323,16 @@ body {
   .footer {
     padding: 20px;
   }
+}
+@media only screen and (max-width: 375px) {
+  .bgService {
+    font-size: 4rem;
+    position: relative;
+    bottom: -200px;
+  }
+  .parallax {
+    background: url(./Assests/MobParallax.jpg)  center no-repeat;
+    background-size: cover;
+  }
+ 
 }
