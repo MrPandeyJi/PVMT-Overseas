@@ -230,7 +230,7 @@ body {
     display: none;
   }
   .top-left-section {
-    max-height: 50px;
+    max-height: 10px;
   }
   .tagline {
     position: relative;
@@ -305,16 +305,18 @@ body {
   .univCap {
     display: none;
   }
-
+  .clgAndUniv {
+    margin-top: 30px;
+  }
   .termsText {
     font-size: 1.2em;
   }
-  .parallax {
-    background: url(./Assests/MobParallax.jpg) fixed center no-repeat;
+    .parallax {
+    background: url(./Assests/MobParallax.jpg)  center no-repeat;
     background-size: cover;
   }
   .topSection {
-    height: 500px;
+    height: 450px;
   }
   .tagline br {
     display: none;
