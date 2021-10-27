@@ -382,5 +382,9 @@ body {
     background: url(./Assests/MobParallax.jpg)  center no-repeat;
     background-size: cover;
   }
- 
+  .contactImg{
+    width: 340px;
+    margin-left: -10px;
+    
+   }
 }
