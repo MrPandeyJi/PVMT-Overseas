@@ -51,15 +51,35 @@ body {
   box-shadow: 0 4px 80px 0 rgb(0 0 0 / 10%), 0 6px 20px 0 rgb(0 0 0 / 9%);
 }
 
+
 .contact {
-  text-decoration: none;
+
   text-align: center;
-  color: #f4f4f4;
-  padding: 10px 20px;
-  border-radius: 25px;
-  background: linear-gradient(to top right, #ffc603, #ff4033);
+  color: #000;
+  font-size: 3em;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px ;
+  
+}
+.contactIcons img{
+  height:"550px";
+}
+.contactIcons a{
+  z-index: 999;
+  transition: all .3s ease-in-out;
+}
+.contactIcons a:hover{
+  z-index: 999;
+  transform: scale(1.1);
 }
 
+.contactImg{
+  margin-top: -200px;
+  margin-left: -40px;
+  width: 60vw;
+
+}
 .menuList {
   display: flex;
   flex-direction: row;
@@ -172,7 +192,7 @@ body {
 
 /*Terms and conditions*/
 .Terms {
-  margin-top: 100px;
+  margin-top: 50px;
 }
 .btnTerms {
   background: linear-gradient(to top right, #ffc603, #ff4033);
@@ -185,7 +205,7 @@ body {
 .termsText {
   text-align: center;
   font-size: 1.8em;
-  font-weight: bold;
+  font-weight: lighter;
   margin: 25px;
   padding: 10px 50px;
 }
@@ -217,6 +237,18 @@ body {
     position: relative;
     top: -200px;
   }
+  .contactImg{
+    width: 700px;
+    height: fit-content;
+   }
+  .univBorder {
+    display: inline-block;
+    margin-top: 10px;
+  }
+  .univCap {
+    display: none;
+  }
+
 }
 
 @media only screen and (max-width: 768px) {
@@ -262,9 +294,29 @@ body {
     margin: 10px;
   }
 
+  .contact {
+
+    font-size: 2.5em;
+    text-transform: uppercase;
+    padding: 10px ;
+    
+  } 
+  .contactIcons img{
+    width: 70px;
+    height: 70px;
+  }
+.contactImg{
+ width: 380px;
+ height: fit-content;
+ margin-left: -20px;
+ margin-top: -120px;
+}
+
+.Terms {
+  margin-top: 40px;
+}
   .secHeading {
     padding: 10px;
-
     font-size: 2.5em;
   }
   .bgService {
@@ -298,13 +350,7 @@ body {
   .universities br {
     display: initial;
   }
-  .univBorder {
-    display: inline-block;
-    margin-top: 10px;
-  }
-  .univCap {
-    display: none;
-  }
+ 
   .clgAndUniv {
     margin-top: 30px;
   }
